@@ -21,10 +21,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 4px;
 }
 
 .dialog::backdrop {
-    background-color: rgb(0, 0, 0 / 0.8);
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(5px); */
 }
 
 .dialog__inner {
@@ -176,14 +178,61 @@ body {
     color: #FF3F3A;
 }
 
-.ri-facebook-fill {
+.dialog__singup {
+    width: 486px;
+    height: 839px;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
 }
-.ri-google-fill {
+
+.close-modal-singup {
+    position: absolute;
+    top: 24px;
+    right: 24px;
 }
-.ri-twitter-fill {
+
+.dialog__singup .checkbox__input {
+    color: #fff;
+    accent-color: #FF3F3A;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
 }
-.ri-linkedin-fill {
+
+.dialog__singup .dialog__checkbox label {
+    margin-left: 12px;
+    margin-bottom: 24px;
 }
+
+
+.dialog__title {
+}
+.modal__singup {
+}
+.gray__line {
+}
+.dialog__social-text {
+}
+.dialog__social {
+}
+.dialog__social-link {
+}
+
+.close-modal-singup {
+}
+.ri-close-large-line {
+}
+
+
+
+
+
+
+
 
 .header {
     position: relative;
@@ -372,9 +421,7 @@ body {
     color: #1E212C;
     font-weight: 800;
 }
-.header__about {
 
-}
 .about__text {
     font-size: 64px;
     color: #1E212C;
@@ -443,10 +490,6 @@ body {
     border-radius: 50%;
 }
 
-.main {
-}
-.container {
-}
 .about__us {
     margin-bottom: 180px;
 }
@@ -479,10 +522,6 @@ body {
     font-size: 46px;
     margin-bottom: 40px;
 }
-.about__us-menu {
-
-}
-
 
 .about__us-item {
     position: relative;
@@ -1386,9 +1425,7 @@ body {
     max-width: 279px;
 
 }
-.footer__logo {
 
-}
 .footer__main-text {
     opacity: 0.6;
     font-size: 12px;
@@ -1416,8 +1453,7 @@ body {
     align-items: flex-start;
     gap: 80px;
 }
-.footer__column {
-}
+
 .column__text {
     color: #fff;
     font-size: 16px;
@@ -1426,8 +1462,7 @@ body {
     padding-bottom: 12px;
     text-transform: uppercase;
 }
-.column__menu {
-}
+
 .column__item {
     padding-bottom: 8px;
 }
@@ -1474,8 +1509,7 @@ body {
   justify-content: center;
   
 }
-.ri-arrow-right-line {
-}
+
 .footer__subtext {
     font-size: 10px;
     color: #fff;

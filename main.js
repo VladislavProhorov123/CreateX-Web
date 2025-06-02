@@ -30,8 +30,33 @@ function closeOnOverlayClick({currentTarget, target}) {
 }
 
 dialog.addEventListener('click', closeOnOverlayClick);
-dialog.addEventListener('cansel', () => {
+dialog.addEventListener('cancel', () => {
     returnScroll()
 })
 
 
+const dialogSingUp = document.querySelector('.dialog__singup');
+const openModalSingUp = document.querySelector('.modal__singup');
+const closeModalSingUp = document.querySelector('.close-modal-singup');
+
+function openSecondModal() {
+    dialogSingUp.showModal();
+    document.body.classList.add('scroll-block');
+}
+
+function closeSecondModal() {
+    dialogSingUp.close();
+    document.body.classList.remove('scroll-block');
+}
+
+openModalSingUp.addEventListener('click', openSecondModal);
+closeModalSingUp.addEventListener('click', closeSecondModal);
+
+function closeOnOverlayClickSecond({ currentTarget, target }) {
+    if (target === currentTarget) {
+        closeSecondModal();
+    }
+}
+
+dialogSingUp.addEventListener('click', closeOnOverlayClickSecond);
+dialogSingUp.addEventListener('cancel', closeSecondModal);
