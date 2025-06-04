@@ -208,32 +208,6 @@ body {
     margin-bottom: 24px;
 }
 
-
-.dialog__title {
-}
-.modal__singup {
-}
-.gray__line {
-}
-.dialog__social-text {
-}
-.dialog__social {
-}
-.dialog__social-link {
-}
-
-.close-modal-singup {
-}
-.ri-close-large-line {
-}
-
-
-
-
-
-
-
-
 .header {
     position: relative;
     background: linear-gradient(-45deg, #FFB4AF, #FFC3B8, #FFBCAD, #FFE8DD);

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100,0,300,0,400,0,700,0,900,1,100,1,300,1,400,1,700,1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #424551;
+    scrollbar-gutter: stable;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 180px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1284px;
+    padding: 0 10px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 95px;
+}
+.logo {
+    margin-top: 35px;
+}
+.menu {
+    margin-top: 35px;
+}
+.menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* margin-left: -150px; */
+}
+
+.menu__link {
+    position: relative;
+    color: inherit;
+    font-weight: 800;
+}
+
+.menu__link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #FF3F3A;
+    transition: width 0.3s ease;
+    border-radius: 3px;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+}
+
+.header__buttons {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    cursor: pointer;
+}
+.header__btn {
+    color: inherit;
+    font-weight: 800;
+}
+
+.header__btn-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FF3F3A, #F75E05);
+    width: 206px;
+    height: 52px;
+    border-radius: 4px;
+}
+
+.header__info {
+}
+.header__subtext {
+}
+.header__text {
+}
+.header__title {
+}
+.header__subtitle {
+}
+.about__btn {
+}
+.about__btn1 {
+}
+.about__btn2 {
+}
+.header__img {
+}
