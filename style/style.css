@@ -997,7 +997,6 @@ body {
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
-
 }
 .person__box {
     max-width: 285px;

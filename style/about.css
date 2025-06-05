@@ -561,3 +561,130 @@ body {
     font-size: 20px;
     margin-bottom: 8px;
 }
+
+.team {
+    margin-bottom: 120px;
+}
+.container {
+}
+.team_inner {
+}
+.team__subtitle {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.team__text {
+    text-align: center;
+    font-weight: 900;
+    font-size: 46px;
+    margin-bottom: 60px;
+}
+
+.team__info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+}
+.person__box {
+    max-width: 285px;
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    flex-wrap: wrap;
+}
+
+.person__box:hover {
+    transform: translateY(-5px);
+}
+
+.person__img-bg {
+    background-color: #FFCF2D;
+    width: 285px;
+    height: 340px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.person__name {
+    color: #424551;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 4px;
+}
+.person__job {
+    color: #787A80;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.person__box-socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.0));
+    transition: height 0.4s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.person__img-bg:hover .person__box-socials {
+    height: 25%;
+}
+
+.socials {
+    opacity: 0;
+    display: flex;
+    gap: 15px;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.person__img-bg:hover .socials {
+    opacity: 0.6;
+    transform: translateY(0);
+}
+
+.social__link {
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.4s ease;
+}
+
+.social__link:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.person__img-bg {
+}
+.person__img {
+}
+.person__box-socials {
+}
+.socials {
+}
+.social__link {
+}
+
+.person__name {
+}
+.person__job {
+}
