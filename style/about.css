@@ -102,19 +102,19 @@ body {
 }
 
 .header__subtext {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 8px;
 }
 .header__text {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 46px;
     margin-bottom: 48px;
 }
 .header__title {
     line-height: 1.5;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -141,14 +141,14 @@ body {
     border: 2px solid #FF3F3A;
     width: 192px;
     height: 52px;
-    font-weight: 800;
+    font-weight: 700;
 }
 .about__btn2 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF;
-    font-weight: 800;
+    font-weight: 700;
     background: linear-gradient(135deg, #FF3F3A, #F75E05);
     width: 200px;
     height: 52px;
@@ -212,7 +212,7 @@ body {
 .video__text {
     font-size: 14px;
     color: #1E212C;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .statictic {
@@ -255,7 +255,7 @@ body {
 }
 .values__text {
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 46px;
     margin-bottom: 60px;
 }
@@ -333,7 +333,7 @@ body {
     
 }
 .directions__text {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 46px;
     margin-bottom: 60px;
     text-align: center;
@@ -489,7 +489,7 @@ body {
     text-transform: uppercase;
 }
 .studying__text {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 46px;
     margin-bottom: 60px;
 }
@@ -572,7 +572,7 @@ body {
 }
 .team__text {
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 46px;
     margin-bottom: 60px;
 }
@@ -615,7 +615,7 @@ body {
 .person__name {
     color: #424551;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     padding-bottom: 4px;
 }
 .person__job {
@@ -674,7 +674,7 @@ body {
 .student__subtext {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     color: #1E212C;
     padding-bottom: 8px;
     padding-top: 100px;
@@ -682,7 +682,7 @@ body {
 .student__text {
     font-size: 46px;
     color: #1E212C;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .student__info {
@@ -778,6 +778,7 @@ body {
 .testimonials {
     background-color: #F4F5F6;
     height: 1256px;
+    margin-bottom: 100px;
 }
 
 .best__jobs {
@@ -791,7 +792,7 @@ body {
 }
 .best__jobs-text {
     margin-bottom: 60px;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 46px;
     text-align: center;
 }
@@ -801,5 +802,352 @@ body {
     align-items: center;
     gap: 40px 102px;
     flex-wrap: wrap;
+    cursor: pointer;
+}
 
+.posts {
+    margin-bottom: 180px;
+}
+
+.posts__info-subtext {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E212C;
+    padding-bottom: 8px;
+}
+.posts__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.posts__info-text {
+    font-size: 46px;
+    font-weight: 700;
+    color: #1E212C;
+}
+.posts__btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 159px;
+    height: 52px;
+    background: linear-gradient(135deg, #FF3F3A, #F75E05);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts__card {
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.posts__card:hover {
+    transform: translateY(-5px);
+}
+
+.post__img {
+    min-height: 300px;
+    /* max-width: 390px; */
+}
+
+.posts__date {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.posts__date p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #787A80;
+    
+}
+
+.posts__question {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E212C;
+    line-height: 1.5;
+    padding: 8px 0 8px 0;
+}
+.posts__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #424551;
+    line-height: 1.6;
+    padding-bottom: 16px;
+}
+.posts__link {
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.posts__link i {
+    color: #FF3F3A;
+    padding-left: 11px;
+}
+
+.posts__card-box {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ri-calendar-line {
+    padding-right: 8px;
+}
+
+.ri-time-line {
+    padding-right: 8px;
+}
+
+.posts__card-absolute {
+    position: absolute;
+    padding: 0 8px;
+    width: 77px;
+    height: 23px;
+    background-color: #fff;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.posts__card-absolute p {
+    color: #424551;
+    font-size: 14px;
+}
+
+.ri-file-text-line {
+    padding-right: 4px;
+}
+
+.ri-play-circle-line {
+    padding-right: 4px;
+}
+
+.ri-mic-line {
+    padding-right: 4px;
+}
+
+.email-section {
+    background: linear-gradient(-45deg, #FFB4AF, #FFC3B8, #FFBCAD, #FFE8DD);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+    height: 564px;
+    position: relative;
+}
+
+.email__subtext {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E212C;
+    padding-top: 120px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.email__text {
+    font-size: 46px;
+    font-weight: 700;
+    color: #1E212C;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.email__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.info-form {
+    background-color: #ffffff;
+    max-width: 600px;
+    min-height: 52px;
+    display: flex;
+    padding: 13px 272px 13px 16px;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    outline: none;
+}
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 159px;
+    height: 52px;
+    background: linear-gradient(135deg, #FF3F3A, #F75E05);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-form::placeholder {
+    color: #9A9CA5;
+    font-size: 16px;
+}
+.email-img1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.email-img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.footer {
+    background-color: #1E212C;
+    height: 384px;
+}
+
+.footer__inner {
+    padding-top: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 80px;
+
+}
+
+.footer__main {
+    max-width: 279px;
+
+}
+
+.footer__main-text {
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 38px;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social__link {
+    opacity: 0.6;
+}
+
+.social__link:hover {
+    opacity: 1;
+}
+
+.footer__column-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.column__text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.column__item {
+    padding-bottom: 8px;
+}
+.column__link {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.ri-smartphone-line {
+    padding-right: 8px;
+}
+.ri-mail-line {
+    padding-right: 8px;
+}
+.footer__input {
+    min-height: 36px;
+    max-width: 286px;
+    width: 100%;
+    background-color: #1E212C;
+    border: 1px solid #5C5D66;
+    border-radius: 4px;
+    padding: 9px 44px 9px 12px;
+    color: #fff;
+}
+
+.footer__form {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.input__arrow {
+    position: absolute;
+  top: 11px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer__subtext {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer__column-4 {
+    max-width: 286px;
+}
+
+.footer__bottom {
+    /* opacity: 0.05; */
+    margin-top: 60px;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.footer__bottom-text {
+
+    color: #fff;
+}
+.ri-heart-3-line {
+    color: #FF3F3A;
+}
+.footer__bottom-subtext {
+    color: #fff;
 }
