@@ -473,7 +473,7 @@ body {
     color: #424551;
 }
 
-.ri-arrow-right-line {
+.directions__link .ri-arrow-right-line {
     color: #FF3F3A;
     margin-left: 11px;
 }
@@ -481,10 +481,7 @@ body {
 .studying {
     margin-bottom: 180px;
 }
-.container {
-}
-.studying__inner {
-}
+
 .studying__subtext {
     font-size: 16px;
     font-weight: 700;
@@ -673,18 +670,115 @@ body {
     color: #fff;
 }
 
-.person__img-bg {
+.student__about {
+    margin: 180px 0 60px 0;
+    text-align: center;
 }
-.person__img {
+.student__subtext {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1E212C;
+    padding-bottom: 8px;
+    padding-top: 100px;
 }
-.person__box-socials {
-}
-.socials {
-}
-.social__link {
+.student__text {
+    font-size: 46px;
+    color: #1E212C;
+    font-weight: 900;
 }
 
-.person__name {
+.student__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
 }
-.person__job {
+
+.student__box {
+    max-width: 1020px;
+    height: 344px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    padding: 64px 105px;
+}
+.student-img {
+    width: 28px;
+    height: 20px;
+}
+
+.student__box-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #424551;
+    line-height: 1.5;
+}
+.student__user {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 20px;
+}
+
+.user__name {
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 4px;
+}
+.user__position {
+    font-size: 14px;
+    font-weight: 500;
+    color: #787A80;
+}
+
+.line {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
+}
+.line-black {
+    background-color: #424551;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.line-gray {
+    width: 30px;
+    height: 4px;
+    background-color: #B3B7BC;
+    border-radius: 2px;
+}
+
+.testimonials {
+    margin-bottom: 120px;
+}
+
+.testimonials__arrow  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #424551;
+    width: 18px;
+    height: 11px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.testimonials__arrow:hover {
+    background-color: #FF3F3A;
+    color: #fff;
+}
+
+.testimonials {
+    background-color: #F4F5F6;
+    height: 1256px;
 }
