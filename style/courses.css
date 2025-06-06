@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100,0,300,0,400,0,700,0,900,1,100,1,300,1,400,1,700,1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #424551;
+    scrollbar-gutter: stable;
+}
+
+.dialog {
+    position: fixed;
+    margin: 0;
+    width: 486px;
+    height: 653px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(5px); */
+}
+
+.dialog__inner {
+    padding: 48px;
+}
+
+.open-modal {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 20px;
+    padding: 5px 45px;
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    font-size: 20px;
+    /* padding: 5px 45px; */
+    top: 24px;
+    right: 24px;
+}
+
+.ri-close-large-line {
+    color: #787A80;
+}
+
+.scroll-block {
+    overflow: hidden;
+}
+
+.dialog__text {
+    font-weight: 800;
+    text-align: center;
+    font-size: 28px;
+    color: #1E212C;
+    line-height: 1.5;
+    padding-bottom: 24px;
+}
+.dialog__subtext {
+    font-weight: 500;
+    font-size: 14px;
+    color: #787A80;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.dialog__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog__form label {
+    padding-bottom: 8px;
+    color: #424551;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dialog__input {
+    width: 100%;
+    border: 2px solid #D7DADD;
+    padding: 12px 0 13px 16px;
+    /* outline: 1px solid #D7DADD; */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: #787A80;
+}
+.dialog__checkbox {
+    display: flex;
+    color: #424551;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dialog__checkbox label {
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+
+.checkbox__input {
+    color: #fff;
+    accent-color: #FF3F3A;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.forgot__password {
+    margin-left: auto;
+    color: #FF3F3A;
+    cursor: pointer;
+}
+.dialog__btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(135deg, #FF3F3A, #F75E05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+.dialog__title {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #424551;
+    padding-bottom:  24px;
+}
+
+.dialog__title a {
+    color: #FF3F3A;
+}
+
+.gray__line {
+    background-color: #E5E8ED;
+    height: 1px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.dialog__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.dialog__social-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #787A80;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.dialog__social-link {
+    width: 20px;
+    height: 20px;
+    color: #787A80;
+    transition: color 0.3s ease;
+}
+
+.dialog__social-link:hover {
+    color: #FF3F3A;
+}
+
+.dialog__singup {
+    width: 486px;
+    height: 839px;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.close-modal-singup {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.dialog__singup .checkbox__input {
+    color: #fff;
+    accent-color: #FF3F3A;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.dialog__singup .dialog__checkbox label {
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+
+.header {
+    position: relative;
+    background: linear-gradient(-45deg, #FFB4AF, #FFC3B8, #FFBCAD, #FFE8DD);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+    height: 468px;
+    margin-bottom: 180px;
+}
+
+
+
+.bg__logo1 {
+    position: absolute;
+    right: 96px;
+    top: 0;
+}
+.bg__logo2 {
+    position: absolute;
+    right: 5px;
+    bottom: 194px;
+}
+.bg__logo3 {
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+}
+.bg__logo4 {
+    position: absolute;
+    bottom: 546px;
+    left: 782px;
+}
+.bg__logo5 {
+    position: absolute;
+    top: 133px;
+    left: 82px;
+}
+.bg__logo6 {
+    position: absolute;
+    bottom: 261px;
+    left: 733px;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1284px;
+    padding: 0 10px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.logo {
+    margin-top: 35px;
+}
+.menu {
+    margin-top: 35px;
+}
+.menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* margin-left: -150px; */
+}
+
+.menu__link {
+    position: relative;
+    color: inherit;
+    font-weight: 800;
+}
+
+.menu__link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #FF3F3A;
+    transition: width 0.3s ease;
+    border-radius: 3px;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+}
+
+.header__buttons {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    cursor: pointer;
+}
+.header__btn {
+    color: inherit;
+    font-weight: 800;
+}
+
+.header__btn-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FF3F3A, #F75E05);
+    width: 206px;
+    height: 52px;
+    border-radius: 4px;
+}
+
+.header__bottom {
+    position: relative;
+}
+.header__bottom-subtext {
+    color: #FF3F3A;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.header__bottom-text {
+    font-size: 46px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+    color: #1E212C;
+}
