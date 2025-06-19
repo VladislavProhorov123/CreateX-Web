@@ -217,7 +217,68 @@ body {
     margin-bottom: 180px;
 }
 
+.burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
 
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #444;
+    padding: 20px;
+}
+
+@media (max-width: 1110px) {
+    .menu {
+        display: none;
+    } 
+    .burger {
+        display: block;
+    }
+    .header__bottom {
+        flex-wrap: wrap;
+    }
+    .header__top {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .about__us-info {
+        flex-wrap: wrap;
+    }
+    .certificate__info {
+        flex-wrap: wrap;
+    }
+    .benefits__bottom {
+        flex-wrap: wrap;
+    }
+    .posts__card-box {
+        flex-wrap: wrap;
+    }
+    .footer__social {
+        flex-wrap: wrap;
+    }
+    .courses__box {
+        grid-template-columns: 1fr;
+    }
+    .about__text {
+        font-size: 54px;
+    }
+    .header__right {
+        /* max-width: 500px; */
+    }
+    .header__btn {
+        display: flex;
+        justify-content: center;
+    }
+    .header__img {
+    max-width: 100%;
+  }
+}
 
 .bg__logo1 {
     position: absolute;
@@ -399,7 +460,7 @@ body {
 .about__text {
     font-size: 64px;
     color: #1E212C;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 60px;
     /* width: 496px; */
 }
@@ -437,7 +498,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 189px;
-    gap: 140px;
+    column-gap: 140px;
+    row-gap: 10px;
     /* flex-wrap: wrap; */
 }
 .bottom__info {
@@ -832,7 +894,7 @@ body {
 }
 .box__main-text {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: #1E212C;
 }
 

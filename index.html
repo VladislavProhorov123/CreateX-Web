@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link
@@ -175,6 +177,30 @@
               </button>
             </div>
           </dialog>
+
+          <div class="burger" id="burger">
+            <i class="ri-menu-line"></i>
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a href="courses.html" class="menu__link">Courses</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Events</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header__top">
           <div class="header__right">
@@ -196,12 +222,13 @@
           </div>
           <img src="img/illustration.png" alt="" class="header__img" />
         </div>
-        <img src="img/header.svg" alt="" class="bg__logo1" />
-        <img src="img/dots.svg" alt="" class="bg__logo2" />
-        <img src="img/circles.svg" alt="" class="bg__logo3" />
-        <img src="img/shapes.svg" alt="" class="bg__logo4" />
-        <img src="img/shapes2.svg" alt="" class="bg__logo5" />
-        <img src="img/Vector.svg" alt="" class="bg__logo6" />
+
+        <img src="img/header.svg" alt="" class="bg__logo1  bg__logo-white" data-speed="0.15"/>
+        <img src="img/dots.svg" alt="" class="bg__logo2 bg__logo-white" data-speed="0.35"/>
+        <img src="img/circles.svg" alt="" class="bg__logo3 bg__logo-white" data-speed="0.55"/>
+        <img src="img/shapes.svg" alt="" class="bg__logo4 bg__logo-white" data-speed="0.75"/>
+        <img src="img/shapes2.svg" alt="" class="bg__logo5 bg__logo-white" data-speed="0.95"/>
+        <img src="img/Vector.svg" alt="" class="bg__logo6 bg__logo-white" data-speed="0.105"/>
 
         <div class="header__bottom">
           <div class="bottom__info">
@@ -862,17 +889,6 @@
           </div>
         </div>
       </div>
-      <section class="footer__bottom">
-        <div class="container">
-          <div class="footer__bottom_inner">
-            <p class="footer__bottom-text">
-              © All rights reserved. Made with
-              <i class="ri-heart-3-line"></i> by Createx Studio
-            </p>
-            <p class="footer__bottom-subtext">GO TO TOP</p>
-          </div>
-        </div>
-      </section>
     </footer>
   </body>
 </html>
