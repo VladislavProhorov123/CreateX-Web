@@ -108,7 +108,6 @@ tl.fromTo(
 gsap.to('.header__right',{
     scrollTrigger: {
         trigger: '.header',
-        markers: true,
         start: 'top top',
         scrub: true,
     },
@@ -120,7 +119,6 @@ gsap.to('.header__right',{
 gsap.to('.header__img',{
     scrollTrigger: {
         trigger: '.header',
-        markers: true,
         start: 'top top',
         scrub: true,
     },
@@ -128,3 +126,83 @@ gsap.to('.header__img',{
     yPercent: -80
 })
 
+gsap.from('.bottom__info', {
+  scrollTrigger: {
+    trigger: '.header',
+    start: 'center center',
+    scrub: true,
+  },
+  scale: 0,
+  transformOrigin: 'left center',
+  ease: 'none',
+  stagger: 1,
+  duration: 1
+})
+
+gsap.from('.about__us-subtext', {
+  scrollTrigger: {
+    trigger: '.about__us-subtext',
+    toggleActions: 'play reverse play reverse',
+    start: 'top 90%'
+  },
+  opacity: 0,
+  x: -20,
+  scale: 0.5,
+  ease: 'power2.out',
+})
+
+gsap.from('.about__us-img', {
+  scrollTrigger: {
+    trigger: '.about__us-img',
+    toggleActions: 'play reverse play reverse',
+    start: 'top 90%'
+  },
+  opacity: 0,
+  x: -200,
+  scale: 0.5,
+  ease: 'power2.out',
+  transformOrigin: 'left center',
+})
+
+gsap.from('.about__us-text', {
+  scrollTrigger: {
+    trigger: '.about__us-text',
+    toggleActions: 'play reverse play reverse',
+    start: 'top 90%'
+  },
+  opacity: 0,
+  y: 50,
+  scale: 0.5,
+  ease: 'power2.out',
+  delay: 0.5
+})
+
+gsap.from('.about__us-menu li', {
+  scrollTrigger: {
+    trigger: '.about__us-menu li',
+    toggleActions: 'play reverse play reverse',
+    start: 'top 90%'
+  },
+  opacity: 0,
+  y: 50,
+  scale: 0.5,
+  ease: 'power2.out',
+  delay: 0.5,
+  stagger: 0.2,
+  delay: 1
+})
+
+gsap.from('.about__us-btn', {
+  scrollTrigger: {
+    trigger: '.about__us-btn',
+    toggleActions: 'play reverse play reverse',
+    start: 'top 90%'
+  },
+  opacity: 0,
+  x: -50,
+  scale: 0.5,
+  ease: 'power2.out',
+  delay: 0.5,
+  stagger: 0.2,
+  delay: 3
+})
